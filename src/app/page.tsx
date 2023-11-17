@@ -1,22 +1,22 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Image from "next/image";
+import styles from "./page.module.css";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import render from "../../public/render.png";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <button>
-
           <span>
             <span className={styles.flag__top} />
             <span className={styles.flag__bottom} />
           </span>
           We stands with Ukraine
-               </button>
+        </button>
         <div>
           <button>
-            <ShoppingCartOutlinedIcon/>
+            <ShoppingCartOutlinedIcon />
             Order
           </button>
         </div>
@@ -25,7 +25,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/render.png"
+          src={render}
           alt="Elim Logo"
           width={500}
           height={465}
@@ -85,5 +85,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
